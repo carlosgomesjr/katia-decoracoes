@@ -290,11 +290,14 @@ function Header() {
         <img src="/assets/katia/logo-katia.png" alt="Katia Decorações" width="150" height="60" />
       </a>
       <nav className="main-nav" aria-label="Navegação principal">
-        <a href="#produtos">Produtos</a>
-        <a href="#processo">Processo</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#instagram">Instagram</a>
-        <a href="#contato">Lojas</a>
+        <a className="mobile-nav-brand" href="#inicio" aria-label="Início">
+          <img src="/assets/katia/logo-katia.png" alt="" width="72" height="29" />
+        </a>
+        <a className="nav-link nav-link-products" href="#produtos">Produtos</a>
+        <a className="nav-link nav-link-process" href="#processo">Processo</a>
+        <a className="nav-link nav-link-testimonials" href="#depoimentos">Depoimentos</a>
+        <a className="nav-link nav-link-instagram" href="#instagram">Instagram</a>
+        <a className="nav-link nav-link-addresses" href="#contato">Endereços</a>
       </nav>
       <div className="header-actions">
         <a className="icon-link" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook da Katia Decorações">

@@ -113,6 +113,10 @@ svg {
   padding: 0 16px;
 }
 
+.mobile-nav-brand {
+  display: none;
+}
+
 .main-nav a,
 .footer-links a {
   color: var(--ink);
@@ -1476,10 +1480,10 @@ h3 {
     gap: 6px;
     overflow-x: auto;
     max-width: calc(100vw - 20px);
-    padding: 8px;
-    border: 1px solid rgba(216, 209, 199, 0.72);
-    background: rgba(252, 250, 247, 0.96);
-    box-shadow: 0 14px 36px rgba(24, 32, 21, 0.16);
+    padding: 7px;
+    border: 1px solid rgba(232, 237, 230, 0.22);
+    background: linear-gradient(135deg, rgba(24, 32, 21, 0.96), rgba(79, 93, 77, 0.96));
+    box-shadow: 0 18px 44px rgba(24, 32, 21, 0.24);
     scrollbar-width: none;
     clip-path: polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px);
   }
@@ -1490,15 +1494,44 @@ h3 {
 
   .main-nav a {
     flex: 0 0 auto;
-    min-height: 38px;
-    padding: 0 13px;
     display: inline-flex;
     align-items: center;
-    border: 1px solid rgba(79, 93, 77, 0.12);
-    background: rgba(79, 93, 77, 0.08);
-    color: var(--deep);
-    font-size: 0.82rem;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 13px;
+    border: 1px solid rgba(252, 250, 247, 0.16);
+    background: rgba(252, 250, 247, 0.08);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    font-weight: 800;
     clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .main-nav a:hover {
+    color: #fff;
+  }
+
+  .mobile-nav-brand {
+    display: inline-flex;
+    width: 50px;
+    padding: 0 9px;
+    border-color: rgba(252, 250, 247, 0.32);
+    background: rgba(252, 250, 247, 0.94);
+  }
+
+  .mobile-nav-brand img {
+    width: 34px;
+    height: auto;
+  }
+
+  .nav-link-process,
+  .nav-link-testimonials {
+    display: none;
+  }
+
+  .nav-link-addresses {
+    background: rgba(232, 237, 230, 0.18);
+    color: #fff;
   }
 
   .icon-link {
@@ -1624,6 +1657,26 @@ h3 {
     font-size: 0.78rem;
   }
 
+  .main-nav {
+    gap: 5px;
+    padding: 6px;
+  }
+
+  .main-nav a {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 0.74rem;
+  }
+
+  .mobile-nav-brand {
+    width: 44px;
+    padding: 0 8px;
+  }
+
+  .mobile-nav-brand img {
+    width: 30px;
+  }
+
   .hero-section {
     min-height: 88svh;
     padding: 108px 18px 116px;
@@ -1730,7 +1783,12 @@ h3 {
   }
 
   .main-nav a {
-    padding: 0 11px;
-    font-size: 0.78rem;
+    padding: 0 8px;
+    font-size: 0.71rem;
+  }
+
+  .mobile-nav-brand {
+    width: 40px;
+    padding: 0 7px;
   }
 }
