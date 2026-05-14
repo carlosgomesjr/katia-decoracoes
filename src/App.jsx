@@ -306,6 +306,9 @@ function Header() {
         <a className="icon-link" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram da Katia Decorações">
           <Icon name="instagram" />
         </a>
+        <a className="button button-small" href="#produtos">
+          Produtos
+        </a>
         <a className="button button-small" href={whatsappUrl}>
           WhatsApp
         </a>
