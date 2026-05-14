@@ -27,13 +27,22 @@
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  max-width: 100%;
+  overflow-x: hidden;
   background: var(--paper);
+}
+
+#root {
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body.is-lightbox-open {
@@ -1436,11 +1445,11 @@ h3 {
   }
 
   .testimonial-carousel-arrow.previous {
-    left: -8px;
+    left: 4px;
   }
 
   .testimonial-carousel-arrow.next {
-    right: -8px;
+    right: 4px;
   }
 }
 
@@ -1466,6 +1475,7 @@ h3 {
     justify-content: flex-start;
     gap: 6px;
     overflow-x: auto;
+    max-width: calc(100vw - 20px);
     padding: 8px;
     border: 1px solid rgba(216, 209, 199, 0.72);
     background: rgba(252, 250, 247, 0.96);
