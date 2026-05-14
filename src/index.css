@@ -1470,71 +1470,7 @@ h3 {
   }
 
   .main-nav {
-    position: fixed;
-    isolation: isolate;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    z-index: 70;
-    display: flex;
-    justify-content: flex-start;
-    gap: 6px;
-    overflow-x: auto;
-    max-width: calc(100vw - 20px);
-    padding: 8px 10px;
-    border: 1px solid rgba(143, 160, 140, 0.34);
-    background:
-      radial-gradient(circle at top left, rgba(143, 160, 140, 0.16), transparent 38%),
-      linear-gradient(180deg, #eef2ec 0%, #e8ede6 100%);
-    box-shadow: 0 18px 44px rgba(24, 32, 21, 0.18);
-    scrollbar-width: none;
-    clip-path: polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px);
-  }
-
-  .main-nav::-webkit-scrollbar {
     display: none;
-  }
-
-  .main-nav a {
-    position: relative;
-    z-index: 1;
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 38px;
-    padding: 0 10px;
-    border: 0;
-    background: transparent;
-    color: var(--deep);
-    font-size: 0.8rem;
-    font-weight: 800;
-    clip-path: none;
-  }
-
-  .main-nav a:hover {
-    color: var(--olive);
-  }
-
-  .mobile-nav-brand {
-    display: inline-flex;
-    width: 48px;
-    padding: 0 8px 0 0;
-    border-right: 1px solid rgba(79, 93, 77, 0.18);
-  }
-
-  .mobile-nav-brand img {
-    width: 34px;
-    height: auto;
-  }
-
-  .main-nav .nav-link-process,
-  .main-nav .nav-link-testimonials {
-    display: none;
-  }
-
-  .nav-link-addresses {
-    color: var(--deep);
   }
 
   .icon-link {
@@ -1614,12 +1550,11 @@ h3 {
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 100px;
   }
 
   .floating-whatsapp {
     right: 18px;
-    bottom: 76px;
+    bottom: 18px;
     width: 54px;
     height: 54px;
   }
@@ -1658,26 +1593,6 @@ h3 {
     min-height: 36px;
     padding: 0 12px;
     font-size: 0.78rem;
-  }
-
-  .main-nav {
-    gap: 5px;
-    padding: 6px;
-  }
-
-  .main-nav a {
-    min-height: 36px;
-    padding: 0 10px;
-    font-size: 0.74rem;
-  }
-
-  .mobile-nav-brand {
-    width: 44px;
-    padding: 0 8px;
-  }
-
-  .mobile-nav-brand img {
-    width: 30px;
   }
 
   .hero-section {
@@ -1756,7 +1671,7 @@ h3 {
 
   .floating-whatsapp {
     right: 16px;
-    bottom: 76px;
+    bottom: 16px;
   }
 
   .section-title-split.about-lifestyle-title {
@@ -1785,13 +1700,4 @@ h3 {
     letter-spacing: 0.16em;
   }
 
-  .main-nav a {
-    padding: 0 8px;
-    font-size: 0.71rem;
-  }
-
-  .mobile-nav-brand {
-    width: 40px;
-    padding: 0 7px;
-  }
 }
