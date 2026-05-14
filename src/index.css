@@ -1482,9 +1482,11 @@ h3 {
     overflow-x: auto;
     max-width: calc(100vw - 20px);
     padding: 8px 10px;
-    border: 1px solid rgba(232, 237, 230, 0.28);
-    background: linear-gradient(135deg, rgba(24, 32, 21, 0.98), rgba(79, 93, 77, 0.98));
-    box-shadow: 0 18px 44px rgba(24, 32, 21, 0.24);
+    border: 1px solid rgba(143, 160, 140, 0.34);
+    background:
+      radial-gradient(circle at top left, rgba(143, 160, 140, 0.16), transparent 38%),
+      linear-gradient(180deg, #eef2ec 0%, #e8ede6 100%);
+    box-shadow: 0 18px 44px rgba(24, 32, 21, 0.18);
     scrollbar-width: none;
     clip-path: polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px);
   }
@@ -1504,21 +1506,21 @@ h3 {
     padding: 0 10px;
     border: 0;
     background: transparent;
-    color: rgba(255, 255, 255, 0.92);
+    color: var(--deep);
     font-size: 0.8rem;
     font-weight: 800;
     clip-path: none;
   }
 
   .main-nav a:hover {
-    color: #fff;
+    color: var(--olive);
   }
 
   .mobile-nav-brand {
     display: inline-flex;
     width: 48px;
     padding: 0 8px 0 0;
-    border-right: 1px solid rgba(252, 250, 247, 0.24);
+    border-right: 1px solid rgba(79, 93, 77, 0.18);
   }
 
   .mobile-nav-brand img {
@@ -1532,7 +1534,7 @@ h3 {
   }
 
   .nav-link-addresses {
-    color: rgba(255, 255, 255, 0.92);
+    color: var(--deep);
   }
 
   .icon-link {
