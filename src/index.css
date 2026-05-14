@@ -1563,9 +1563,16 @@ h3 {
   }
 
   .about-lifestyle-visual {
-    min-height: 360px;
+    justify-self: center;
+    width: min(380px, 100%);
+    min-height: auto;
     max-height: none;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 9 / 16;
+  }
+
+  .about-lifestyle-visual img {
+    object-position: center;
+    animation: none;
   }
 
   .site-footer {
@@ -1701,7 +1708,8 @@ h3 {
   }
 
   .about-lifestyle-visual {
-    min-height: 320px;
+    width: min(340px, 100%);
+    min-height: auto;
   }
 
   .reveal {
