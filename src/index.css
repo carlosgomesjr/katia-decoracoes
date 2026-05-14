@@ -1471,6 +1471,7 @@ h3 {
 
   .main-nav {
     position: fixed;
+    isolation: isolate;
     right: 10px;
     bottom: 10px;
     left: 10px;
@@ -1480,7 +1481,7 @@ h3 {
     gap: 6px;
     overflow-x: auto;
     max-width: calc(100vw - 20px);
-    padding: 7px;
+    padding: 8px 10px;
     border: 1px solid rgba(232, 237, 230, 0.28);
     background: linear-gradient(135deg, rgba(24, 32, 21, 0.98), rgba(79, 93, 77, 0.98));
     box-shadow: 0 18px 44px rgba(24, 32, 21, 0.24);
@@ -1493,18 +1494,20 @@ h3 {
   }
 
   .main-nav a {
+    position: relative;
+    z-index: 1;
     flex: 0 0 auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 38px;
-    padding: 0 13px;
-    border: 1px solid rgba(252, 250, 247, 0.78);
-    background: rgba(252, 250, 247, 0.94);
+    padding: 0 10px;
+    border: 0;
+    background: transparent;
     color: var(--deep);
     font-size: 0.8rem;
     font-weight: 800;
-    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    clip-path: none;
   }
 
   .main-nav a:hover {
@@ -1513,10 +1516,9 @@ h3 {
 
   .mobile-nav-brand {
     display: inline-flex;
-    width: 50px;
-    padding: 0 9px;
-    border-color: rgba(252, 250, 247, 0.82);
-    background: #fff;
+    width: 48px;
+    padding: 0 8px 0 0;
+    border-right: 1px solid rgba(79, 93, 77, 0.18);
   }
 
   .mobile-nav-brand img {
@@ -1530,8 +1532,16 @@ h3 {
   }
 
   .nav-link-addresses {
-    background: #fff;
     color: var(--deep);
+  }
+
+  .main-nav::before {
+    position: absolute;
+    inset: 7px;
+    z-index: 0;
+    content: "";
+    background: rgba(252, 250, 247, 0.96);
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
   }
 
   .icon-link {
