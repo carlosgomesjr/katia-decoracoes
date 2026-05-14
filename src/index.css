@@ -1504,21 +1504,21 @@ h3 {
     padding: 0 10px;
     border: 0;
     background: transparent;
-    color: var(--deep);
+    color: rgba(255, 255, 255, 0.92);
     font-size: 0.8rem;
     font-weight: 800;
     clip-path: none;
   }
 
   .main-nav a:hover {
-    color: var(--olive);
+    color: #fff;
   }
 
   .mobile-nav-brand {
     display: inline-flex;
     width: 48px;
     padding: 0 8px 0 0;
-    border-right: 1px solid rgba(79, 93, 77, 0.18);
+    border-right: 1px solid rgba(252, 250, 247, 0.24);
   }
 
   .mobile-nav-brand img {
@@ -1532,16 +1532,7 @@ h3 {
   }
 
   .nav-link-addresses {
-    color: var(--deep);
-  }
-
-  .main-nav::before {
-    position: absolute;
-    inset: 7px;
-    z-index: 0;
-    content: "";
-    background: rgba(252, 250, 247, 0.96);
-    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    color: rgba(255, 255, 255, 0.92);
   }
 
   .icon-link {
