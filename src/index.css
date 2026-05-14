@@ -1481,8 +1481,8 @@ h3 {
     overflow-x: auto;
     max-width: calc(100vw - 20px);
     padding: 7px;
-    border: 1px solid rgba(232, 237, 230, 0.22);
-    background: linear-gradient(135deg, rgba(24, 32, 21, 0.96), rgba(79, 93, 77, 0.96));
+    border: 1px solid rgba(232, 237, 230, 0.28);
+    background: linear-gradient(135deg, rgba(24, 32, 21, 0.98), rgba(79, 93, 77, 0.98));
     box-shadow: 0 18px 44px rgba(24, 32, 21, 0.24);
     scrollbar-width: none;
     clip-path: polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px);
@@ -1499,24 +1499,24 @@ h3 {
     justify-content: center;
     min-height: 38px;
     padding: 0 13px;
-    border: 1px solid rgba(252, 250, 247, 0.16);
-    background: rgba(252, 250, 247, 0.08);
-    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(252, 250, 247, 0.78);
+    background: rgba(252, 250, 247, 0.94);
+    color: var(--deep);
     font-size: 0.8rem;
     font-weight: 800;
     clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
   }
 
   .main-nav a:hover {
-    color: #fff;
+    color: var(--olive);
   }
 
   .mobile-nav-brand {
     display: inline-flex;
     width: 50px;
     padding: 0 9px;
-    border-color: rgba(252, 250, 247, 0.32);
-    background: rgba(252, 250, 247, 0.94);
+    border-color: rgba(252, 250, 247, 0.82);
+    background: #fff;
   }
 
   .mobile-nav-brand img {
@@ -1530,8 +1530,8 @@ h3 {
   }
 
   .nav-link-addresses {
-    background: rgba(232, 237, 230, 0.18);
-    color: #fff;
+    background: #fff;
+    color: var(--deep);
   }
 
   .icon-link {
