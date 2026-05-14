@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/p004-site-outb-conceito-decor',
+  base: './',
+  cacheDir: '../../node_modules/.vite/p005-site-katia-decoracoes',
   plugins: [react(), tailwindcss()],
 })

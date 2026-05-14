@@ -1,6 +1,6 @@
-# Conceito Decor
+# Katia Decorações
 
-Site institucional da Conceito Decor desenvolvido com Vite, React e Tailwind CSS.
+Site institucional da Katia Decorações desenvolvido com Vite, React e Tailwind CSS.
 
 ## Comandos
 
@@ -8,10 +8,13 @@ Site institucional da Conceito Decor desenvolvido com Vite, React e Tailwind CSS
 npm install
 npm run dev
 npm run build
+npm run lint
 ```
 
-## Deploy
+## Deploy na Vercel
 
 Build command: `npm run build`
 
 Output directory: `dist`
+
+Framework preset: `Vite`
