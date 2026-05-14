@@ -1524,8 +1524,8 @@ h3 {
     height: auto;
   }
 
-  .nav-link-process,
-  .nav-link-testimonials {
+  .main-nav .nav-link-process,
+  .main-nav .nav-link-testimonials {
     display: none;
   }
 
