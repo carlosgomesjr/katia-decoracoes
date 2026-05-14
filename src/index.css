@@ -1567,11 +1567,11 @@ h3 {
     width: min(380px, 100%);
     min-height: auto;
     max-height: none;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 15.15;
   }
 
   .about-lifestyle-visual img {
-    object-position: center;
+    object-position: center 43%;
     animation: none;
   }
 
